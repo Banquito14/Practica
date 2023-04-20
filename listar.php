@@ -33,7 +33,7 @@ $mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 					-->
 					<?php foreach($mascotas as $mascota){ ?>
 						<tr>
-							<td><?php echo $mascota->id ?></td>
+							<td><?php echo $mascota->idmascota ?></td>
 							<td><?php echo $mascota->nombre ?></td>
 							<td><?php echo $mascota->edad ?></td>
 							<td><a class="btn btn-warning" href="<?php echo "editar.php?id=" . $mascota->id?>">Editar 📝</a></td>
