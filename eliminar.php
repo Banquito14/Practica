@@ -2,13 +2,13 @@
 /*
 Este archivo elimina un dato por ID sin pedir confirmación. El ID viene de la URL
 */
-if (!isset($_GET["id"])) {
+if (!isset($_GET["idmascota"])) {
     exit();
 }
 
-$id = $_GET["id"];
+$id = $_GET["idmascota"];
 include_once "base_de_datos.php";
-$sentencia = $base_de_datos->prepare("DELETE FROM mascotas WHERE id = ?;");
+$sentencia = $base_de_datos->prepare("DELETE FROM mascotas WHERE idmascota = ?;");
 $resultado = $sentencia->execute([$id]);
 if ($resultado === true) {
     header("Location: listar.php");

@@ -3,13 +3,13 @@
 Este archivo muestra un formulario llenado automáticamente (a partir del ID pasado por la URL) para editar
  */
 
-if (!isset($_GET["id"])) {
+if (!isset($_GET["idmascota"])) {
     exit();
 }
 
-$id = $_GET["id"];
+$id = $_GET["idmascota"];
 include_once "base_de_datos.php";
-$sentencia = $base_de_datos->prepare("SELECT id, nombre, edad FROM mascotas WHERE id = ?;");
+$sentencia = $base_de_datos->prepare("SELECT idmascota, nombre, edad FROM mascotas WHERE id = ?;");
 $sentencia->execute([$id]);
 $mascota = $sentencia->fetchObject();
 if (!$mascota) {
