@@ -2,10 +2,11 @@
 
 $contraseña = "contraseña_de_la_base_de_datos";
 $usuario = "usuario_de_la_base_de_datos";
-$nombreBaseDeDatos = "nombre_de_la_base_de_datos";
+$nombreBaseDeDatos = "npostgres";
 
-$rutaServidor = "host_de_la_base_de_datos";
-$puerto = "puerto_de_la_base_de_datos";
+$rutaServidor = "
+containers-us-west-23.railway.app";
+$puerto = "6833";
 
 try{
 
