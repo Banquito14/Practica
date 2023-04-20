@@ -5,7 +5,7 @@ $usuario = "usuario_de_la_base_de_datos";
 $nombreBaseDeDatos = "nombre_de_la_base_de_datos";
 
 $rutaServidor = "
-containers-us-west-23.railway.app";
+34.127.35.192";
 $puerto = "6833";
 
 try{
