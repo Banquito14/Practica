@@ -1,11 +1,11 @@
 <?php
 
-$contraseña = "contraseña_de_la_base_de_datos";
-$usuario = "usuario_de_la_base_de_datos";
-$nombreBaseDeDatos = "nombre_de_la_base_de_datos";
+$contraseña = "6TO9nocX2nAou9yX11P5";
+$usuario = "railway";
+$nombreBaseDeDatos = "postgres";
 
 $rutaServidor = "
-34.127.35.192";
+containers-us-west-23.railway.app";
 $puerto = "6833";
 
 try{
