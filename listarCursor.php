@@ -6,7 +6,7 @@ Este archivo lista todos los datos de la tabla, pero en un ciclo usando un curso
 <?php
 
 include_once "base_de_datos.php";
-$consulta = "select id, nombre, edad from mascotas";
+$consulta = "select idmascota, nombre, edad from mascotas";
 # Preparar sentencia e indicar que vamos a usar un cursor
 $sentencia = $base_de_datos->prepare($consulta, [
     PDO::ATTR_CURSOR => PDO::CURSOR_SCROLL,
@@ -40,7 +40,7 @@ $sentencia->execute();
 				-->
 				<?php while ($mascota = $sentencia->fetchObject()){ ?>
 					<tr>
-						<td><?php echo $mascota->id ?></td>
+						<td><?php echo $mascota->idmascota ?></td>
 						<td><?php echo $mascota->nombre ?></td>
 						<td><?php echo $mascota->edad ?></td>
 						<td><a class="btn btn-warning" href="<?php echo "editar.php?id=" . $mascota->id?>">Editar 📝</a></td>
