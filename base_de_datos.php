@@ -1,8 +1,8 @@
 <?php
 
 $contraseña = "6TO9nocX2nAou9yX11P5";
-$usuario = "railway";
-$nombreBaseDeDatos = "postgres";
+$usuario = "postgres";
+$nombreBaseDeDatos = "railway";
 
 $rutaServidor = "
 containers-us-west-23.railway.app";
