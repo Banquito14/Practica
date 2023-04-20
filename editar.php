@@ -25,7 +25,7 @@ if (!$mascota) {
 	<div class="col-12">
 		<h1>Editar</h1>
 		<form action="guardarDatosEditados.php" method="POST">
-			<input type="hidden" name="id" value="<?php echo $mascota->id; ?>">
+			<input type="hidden" name="idmascota" value="<?php echo $mascota->idmascota; ?>">
 			<div class="form-group">
 				<label for="nombre">Nombre</label>
 				<input value="<?php echo $mascota->nombre; ?>" required name="nombre" type="text" id="nombre" placeholder="Nombre de mascota" class="form-control">
