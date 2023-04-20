@@ -36,8 +36,8 @@ $mascotas = $sentencia->fetchAll(PDO::FETCH_OBJ);
 							<td><?php echo $mascota->idmascota ?></td>
 							<td><?php echo $mascota->nombre ?></td>
 							<td><?php echo $mascota->edad ?></td>
-							<td><a class="btn btn-warning" href="<?php echo "editar.php?id=" . $mascota->id?>">Editar 📝</a></td>
-							<td><a class="btn btn-danger" href="<?php echo "eliminar.php?id=" . $mascota->id?>">Eliminar 🗑️</a></td>
+							<td><a class="btn btn-warning" href="<?php echo "editar.php?idmascota=" . $mascota->idmascota?>">Editar 📝</a></td>
+							<td><a class="btn btn-danger" href="<?php echo "eliminar.php?idmascota=" . $mascota->idmascota?>">Eliminar 🗑️</a></td>
 						</tr>
 					<?php } ?>
 				</tbody>
