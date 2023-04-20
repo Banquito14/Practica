@@ -9,7 +9,7 @@ if (!isset($_GET["idmascota"])) {
 
 $id = $_GET["idmascota"];
 include_once "base_de_datos.php";
-$sentencia = $base_de_datos->prepare("SELECT idmascota, nombre, edad FROM mascotas WHERE id = ?;");
+$sentencia = $base_de_datos->prepare("SELECT idmascota, nombre, edad FROM mascotas WHERE idmascota = ?;");
 $sentencia->execute([$id]);
 $mascota = $sentencia->fetchObject();
 if (!$mascota) {
